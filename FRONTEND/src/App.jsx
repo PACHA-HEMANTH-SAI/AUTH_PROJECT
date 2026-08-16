@@ -16,8 +16,6 @@ function App() {
         <Route path='/login' element={<LoginPage/>}></Route>
       </Routes>
     </div>
-
-      
   )
 }
 

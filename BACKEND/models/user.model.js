@@ -31,5 +31,3 @@ const userSchema = new mongoose.Schema({
 // {timestamps : true} createat and updatat fields will be automatically added into each document.
 
 export const User = mongoose.model('User',userSchema); 
-
-
