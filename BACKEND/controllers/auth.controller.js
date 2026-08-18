@@ -214,9 +214,9 @@ export const checkAuth = async (req,res) => {
             return res.status(400).json({success: false, message: "user not found"});
         }
 
-         res.status(201).json({success : true, user})
+        res.status(201).json({success : true, user})
     }catch(error) {
-        console.log("Error on chexk auth ", error);
+        console.log("Error on check auth ", error);
         res.status(400).json({success: false, message: error.message});
     }
 }
