@@ -8,6 +8,8 @@ import { Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import DashBoardPage from "./pages/DashBoardPage";
 import { Loader } from "lucide-react";
+import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import ResetPasswordPage from "./pages/ResetPasswordPage";
 
 const ProtectedRoute = ({children}) => {
     const {isAuthenticated, user} = useAuthStore();
@@ -51,6 +53,8 @@ function App() {
         <Route path='/signup' element={<SignUpPage/>}></Route>
         <Route path='/login' element={<LoginPage/>}></Route>
         <Route path='/verify-email' element={<EmailVerificationPage/>}></Route>
+        <Route path='/forgot-password' element={<ForgotPasswordPage/>}></Route>
+        <Route path='/reset-password/:token' element = {<ResetPasswordPage/>}></Route>
       </Routes>
     </div>
   )
