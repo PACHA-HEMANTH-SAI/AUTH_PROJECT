@@ -55,6 +55,7 @@ function App() {
         <Route path='/verify-email' element={<EmailVerificationPage/>}></Route>
         <Route path='/forgot-password' element={<ForgotPasswordPage/>}></Route>
         <Route path='/reset-password/:token' element = {<ResetPasswordPage/>}></Route>
+        <Route path='*' element = {<Navigate to='/' replace/>}></Route>
       </Routes>
     </div>
   )
