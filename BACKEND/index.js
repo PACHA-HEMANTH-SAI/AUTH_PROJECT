@@ -28,7 +28,3 @@ app.listen(PORT,() => {
     connectDB();
     console.log(`Server is Running at port ${PORT}`);
 })
-
-//JiFgNkfF4hMIRrnO
-
-//mongodb+srv://pachahemanthsai_db_user:JiFgNkfF4hMIRrnO@cluster0.buzk8lh.mongodb.net/?appName=Cluster0
